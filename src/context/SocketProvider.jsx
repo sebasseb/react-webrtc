@@ -8,7 +8,7 @@ export const useSocket = () => {
 };
 
 export const SocketProvider = (props) => {
-  const socket = useMemo(() => io("https://fir-puddle-catsup.glitch.me:8000"), []);
+  const socket = useMemo(() => io("https://fir-puddle-catsup.glitch.me"), []);
 
   return (
     <SocketContext.Provider value={socket}>
